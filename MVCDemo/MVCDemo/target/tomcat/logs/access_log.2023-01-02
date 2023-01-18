@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:18:44 +0530] "GET /spring-mvc/interest HTTP/1.1" 200 371 http-bio-8080-exec-1 481
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:18:54 +0530] "POST /spring-mvc/interest HTTP/1.1" 200 139 http-bio-8080-exec-3 97
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:19:53 +0530] "GET /spring-mvc/customerregistration HTTP/1.1" 200 1356 http-bio-8080-exec-1 629
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:19:53 +0530] "GET /spring-mvc/webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 200 36868 http-bio-8080-exec-4 30
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:19:53 +0530] "GET /spring-mvc/webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-2 40
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:19:53 +0530] "GET /spring-mvc/webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 200 121260 http-bio-8080-exec-3 44
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:20:50 +0530] "POST /spring-mvc/customerregistration HTTP/1.1" 200 1664 http-bio-8080-exec-7 142
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:20:50 +0530] "POST /spring-mvc/customerregistration HTTP/1.1" 200 1664 http-bio-8080-exec-6 11
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:21:34 +0530] "POST /spring-mvc/customerregistration HTTP/1.1" 200 140 http-bio-8080-exec-9 42
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:22:31 +0530] "GET /spring-mvc//list-todos HTTP/1.1" 200 914 http-bio-8080-exec-1 456
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:22:39 +0530] "GET /spring-mvc/add-todo HTTP/1.1" 200 255 http-bio-8080-exec-3 42
+0:0:0:0:0:0:0:1 - - [02/Jan/2023:14:27:53 +0530] "POST /spring-mvc/customerregistration HTTP/1.1" 200 140 http-bio-8080-exec-5 143
