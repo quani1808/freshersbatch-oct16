@@ -1,0 +1,72 @@
+// program 1//
+
+package com.Oop;    
+public class Singletone 
+{
+static Singletone st=new Singletone();        
+private Singletone()
+{            
+System.out.println("constructor will invoke only one object");        
+}        
+static Singletone getInstance()        
+{            
+return st;        
+}    
+}    
+class Test    
+{        
+public static void main(String args[])        
+{            
+Singletone st1= Singletone.getInstance();            
+Singletone st2= Singletone.getInstance();            
+System.out.println(st1);            
+System.out.println(st2);        
+}    
+}
+
+
+// program 2//
+
+
+package com.Oop;    
+class Employee 
+{        
+int employeeId;        
+String employeeName;        
+double salary;        
+public Employee(int employeeId,String employeeName,double salary) 
+{            
+this.employeeId=employeeId;            
+this.employeeName=employeeName;            
+this.salary=salary;        
+}        
+public int setEmployeeId() 
+{            
+return employeeId;        
+}        
+public void setEmployeeName(String employeeName) 
+{            
+this.employeeName=employeeName;        
+}        
+public double getSalary() 
+{            
+return salary;        
+}        
+public void setSalary(double salary) 
+{            
+this.salary=salary;        
+}    
+}
+
+
+class Employee 
+{        
+int employeeId;        
+String employeeName;        
+double salary;        
+public Employee(int employeeId,String employeeName,double salary) 
+{
+2 nd one and the emloyee class 
+
+
+

@@ -1,0 +1,359 @@
+// program 1//
+
+import java.util.Scanner;
+
+public class arm {
+    public static void main(String[] args) {
+        int num, temp, c = 0;
+        Scanner in = new Scanner(System.in);
+        num = in.nextInt();
+        temp = num;
+        while (num != 0) {
+            int d = num % 10;
+            c += d * d * d;
+            num /= 10;
+        }
+        if (temp == c) {
+            System.out.println("Number is armstrong");
+        } else {
+            System.out.println("Number is not armstrong");
+        }
+    }
+}
+
+
+
+// program 2//
+
+import java.util.Scanner;
+public class armstrong {
+    public static void main(String[] args) {
+    int i=100,arm;
+    System.out.println("armstrong numbers between 100 to 999");
+    while(i<1000) {
+        arm = armstrongOrNot(i);
+        if (arm == i)
+            System.out.println(i);
+        i++;
+    }
+    }
+    static int armstrongOrNot(int num)
+    {
+        int x,a=0;
+        while(num!=0)
+        {
+            x=num%10;
+            a=a+(x*x*x);
+            num/=10;
+        }
+        return a;
+    }
+}
+
+// program 3 //
+
+package com.company;
+import java.util.Scanner;
+
+public class SimpleCompound {
+    public static void main(String args[])
+    {
+        double a,rate,t,sim,com;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the Amount");
+        a=s.nextInt();
+        System.out.println("Enter the no of years:");
+        t=s.nextDouble();
+        System.out.println("Enter the rate interest");
+        rate=s.nextDouble();
+        sim=(a*t*rate)/100;
+        com=a*Math.pow(1.0+rate/100.0,t)-a;
+        System.out.println("Simple Interest is:"+sim);
+        System.out.println("Compound Interest:"+com);
+    }
+}
+
+// program 4//
+
+package com.Datastructers;
+import java.util.Scanner;
+
+
+
+   public class Studentmarks {
+
+
+
+       public static void main(String[] args) {
+            int s1, s2, s3, m1, h1, c1, m2, h2, c2, m3, h3, c3, t1, t2, t3, a1, a2, a3, st1, st2, st3, sa1, sa2, sa3;
+            Scanner s = new Scanner(System.in);
+            System.out.println("enter first student maths marks subject marks");
+            m1 = s.nextInt();
+            System.out.println("enter first student history marks subject marks");
+            h1 = s.nextInt();
+            System.out.println("enter first student chemistry marks subject marks");
+            c1 = s.nextInt();
+            System.out.println("enter second student maths marks subject marks");
+            m2 = s.nextInt();
+            System.out.println("enter second student history marks subject marks");
+            h2 = s.nextInt();
+            System.out.println("enter second student chemistry marks subject marks");
+            c2 = s.nextInt();
+            System.out.println("enter second third maths marks subject marks");
+            m3 = s.nextInt();
+            System.out.println("enter second third history marks subject marks");
+            h3 = s.nextInt();
+            System.out.println("enter second third chemistry marks subject marks");
+            c3 = s.nextInt();
+            t1 = m1 + h1 + c1;
+            System.out.println("first student total marks" + t1);
+            t2 = m2 + h2 + c2;
+            System.out.println("second student total marks" + t1);
+            t3 = m3 + h3 + c3;
+            System.out.println("third student total marks" + t1);
+            a1 = (m1 + h1 + c1) / 3;
+            System.out.println("first student average mark" + a1);
+            a2 = (m2 + h2 + c2) / 3;
+            System.out.println("second student average mark" + a2);
+            a3 = (m3 + h3 + c3) / 3;
+            System.out.println("third student average mark" + a3);
+            st1 = m1 + m2 + m3;
+            System.out.println("maths total marks" + st1);
+            st2 = h1 + h2 + h3;
+            System.out.println("history total marks" + st2);
+            st3 = c1 + c2 + c3;
+            System.out.println("chemistry total marks" + st1);
+            sa1 = (m1 + m2 + m3);
+            System.out.println("maths average marks" + sa1);
+            sa2 = (h1 + h2 + h3);
+            System.out.println("history average marks" + sa2);
+            sa3 = (c1 + c2 + c3);
+            System.out.println("chemistry average marks" + sa3);
+        }
+    }
+
+// program 5 //
+
+public class Marks {
+    public static void main(String[]args){
+        int a=60;
+        int sub1=73;
+        int sub2=45;
+        int sub3=88;
+        if(sub1>a && sub2>a && sub3>a){
+            System.out.println("passed");}
+        else if (sub1>a && sub2>a){
+            System.out.println("promoted");}
+        else if(sub2>a && sub3>a){
+            System.out.println("promoted");}
+        else if(sub1>a && sub3>a){
+            System.out.println("promoted");}
+        else{
+            System.out.println("failed");
+        }
+    }
+}
+
+// program 6 //
+
+package com.corejava;
+
+
+
+import java.util.Scanner;
+
+
+
+public class Income {
+    public static void main(String[] args)
+    {
+        double tax,Incm;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter income ");
+        Incm=sc.nextDouble();
+        if(Incm<=180000)
+            tax=0;
+        else if(Incm<=300000)
+            tax=0.1*(Incm-181000);
+        else if(Incm<=500000)
+            tax=(0.2*(Incm-300000))+(0.1*100000);
+        else if(Incm<=1000000)
+            tax=(0.3*(Incm-500000))+(0.2*200000)+(0.1*180000);
+        else
+            tax=(0.4*(Incm-1000000))+(0.3*500000)+(0.2*200000)+(0.1*100000);
+        System.out.println("Income tax amount is "+tax);
+    }
+}
+
+// program 7//
+
+package com.company;
+import java.util.Scanner;
+public class CUI {
+
+
+
+   public static void main(String[] args) {
+        if(!validateUser()) {
+            System.out.println("Contact Admin");
+        }
+    }
+    public static boolean validateUser( ) {
+        boolean result=false;
+        String username,password;
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<3;i++) {
+            System.out.println("Enter the Username");
+            username=sc.nextLine();
+            System.out.println("Enter the Password");
+            password=sc.nextLine();
+
+
+
+           if(username.equals("sunita")&&(password.equals("Wanda"))) {
+                System.out.println("Welcome\t"+username);
+                result =true;
+                return result;
+            }
+            return result;
+        }
+        return result;
+    }
+}
+
+// program 8 //
+
+import java.util.Scanner;
+public class ArrayValue {
+    public static void main(String[]args){
+        int arr[]={5,12,14,6,78,19,1,23,26,35,37,7,52,86,47};
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int x=sc.nextInt();
+        for(int i=0;i<arr.length;i++){
+            if(x==arr[i]){
+                System.out.println("The number is in array"+x);}
+        }
+        }
+     }
+
+
+
+
+package com.company;
+import java.util.*;
+public class LinerSearch {​​​​​​
+    public static void main(String[] args) {​​​​​​
+        int count = 0;
+        int[] arr = new int[]{​​​​​​5, 12, 14, 6, 78, 19, 1, 23, 26, 35, 37, 7, 52, 86, 47}​​​​​​;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number to be searched");
+        int n = s.nextInt();
+        for (int i = 0; i < 15; i++) {​​​​​​
+            if (arr[i] == n) {​​​​​​
+                count = 1;
+                break;
+            }​​​​​​
+        }​​​​​​
+        if (count == 1)
+            System.out.println("search value is found");
+        else
+            System.out.println("search value is not found");
+    }​​​​​​
+}​​​​​​
+
+
+
+// program 9 //
+
+
+package com.Datastructers;
+import java.util.*;    
+public class Bubblesort {        
+public static void main(String[] args)        
+{            
+int a[] = {5, 12, 14, 6, 78, 19, 1, 23, 26, 35, 37, 7, 52, 86, 47};            
+Scanner s = new Scanner(System.in);            
+System.out.println("enter searching value");            
+int key = s.nextInt();            
+for (int i = 0; i < 15; i++)            
+{                
+if(key==a[i])                
+{
+
+                    
+System.out.println(key + "is found at index" + i);                
+}           
+}        
+}   
+}
+
+
+
+package com.corejava;
+public class BubbleSort 
+{    
+static void bubblesort(int arr[])    
+{
+int n = arr.length;        
+System.out.println(n);        
+//first adjacent element        
+for(int i=0;i<n-1;i++)        
+{
+//getting second adjacent element            
+for(int j=0;j<n-i-1;j++)                
+//comparing the elements                
+if(arr[j]>arr[j+1])                
+{int temp=arr[j];                    
+arr[j]=arr[j+1];                    
+arr[j+1]=temp;                
+}        
+}    
+}    
+public static void main(String[] args)    
+{        
+int[] arr= {5,12,14,6,78,19,1,23,26,35,37,7,52,87,47};        
+BubbleSort.bubblesort(arr);        
+System.out.println("sorted array");        
+System.out.println();        
+for(int ele:arr)        
+{
+System.out.print(ele+" ");
+}    
+}
+}
+
+
+
+Ques 9:
+package com.corejava;
+import java.util.Scanner;
+public class AvgMarks 
+{    
+public static void main(String[] args) 
+{        
+Scanner scanner = new Scanner(System.in);        
+System.out.println("Enter marks for Student 1: ");        
+int a1 = scanner.nextInt(); 
+int a2 = scanner.nextInt(); 
+int a3 = scanner.nextInt();        
+System.out.println("Enter marks for Student 2: ");        
+int b1 = scanner.nextInt(); 
+int b2 = scanner.nextInt(); 
+int b3 = scanner.nextInt();        
+System.out.println("Enter marks for Student 3: ");        
+int c1 = scanner.nextInt(); 
+int c2 = scanner.nextInt(); 
+int c3 = scanner.nextInt();        
+int s1 = a1+a2+a3; 
+int s2 = b1+b2+b3; 
+int s3 = c1+c2+c3;        
+int totalMarks = s1 + s2 + s3;        
+int avgMarks = (s1 + s2 + s3) / 3;        
+System.out.println("Total marks scored by all students: " + totalMarks);        
+System.out.println("Average marks scored by all students: " + avgMarks);        
+System.out.println("Total marks scored by Student 1: " + s1);        
+System.out.println("Total marks scored by Student 2: " + s2);        
+System.out.println("Total marks scored by Student 3: " + s3);        System.out.println("Average marks scored by Student 1: " + s1/3);        System.out.println("Average marks scored by Student 2: " + s2/3);        System.out.println("Average marks scored by Student 3: " + s3/3);        System.out.println("Average marks scored in subject 1: " + (a1+b1+c1)/3);        System.out.println("Average marks scored in subject 2: " + (a2+b2+c2)/3);        System.out.println("Average marks scored in subject 3: " + (a3+b3+c3)/3);    }
+}
+
